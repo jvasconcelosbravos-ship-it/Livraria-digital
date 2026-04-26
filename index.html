@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>K11 Library</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1 class="logo">K11 LIBRARY</h1>
+<input id="busca" placeholder="Buscar livros..." oninput="buscar()">
+</header>
+
+<section id="home" class="grid"></section>
+
+<section id="leitor" class="leitor">
+<button onclick="voltar()" class="back">⬅ Voltar</button>
+
+<h2 id="titulo"></h2>
+
+<div id="conteudo"></div>
+
+<div class="nav">
+<button onclick="anterior()">⬅</button>
+<button onclick="proximo()">➡</button>
+</div>
+
+<div class="actions">
+<button onclick="favoritar()">⭐ Favorito</button>
+<button onclick="like()">👍 Like</button>
+</div>
+
+<div class="avaliacao">
+<span onclick="avaliar(1)">★</span>
+<span onclick="avaliar(2)">★★</span>
+<span onclick="avaliar(3)">★★★</span>
+<span onclick="avaliar(4)">★★★★</span>
+<span onclick="avaliar(5)">★★★★★</span>
+</div>
+
+<div class="ads">💰 Espaço de anúncio</div>
+
+</section>
+
+<footer>
+<p>© K11</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
