@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0b0f1a;
+  color: white;
+}
+
+.app {
+  display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 220px;
+  background: #0f172a;
+  padding: 20px;
+  height: 100vh;
+}
+
+.sidebar h2 {
+  margin-bottom: 30px;
+}
+
+.sidebar a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin: 12px 0;
+}
+
+.sidebar a:hover {
+  color: white;
+}
+
+.footer-box {
+  margin-top: 40px;
+  padding: 10px;
+  background: #1e293b;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* MAIN */
+.main {
+  flex: 1;
+  padding: 20px;
+}
+
+/* SEARCH */
+.top input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: #1e293b;
+  color: white;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+  background: linear-gradient(135deg, #1e1b4b, #0f172a);
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.hero-text h1 {
+  font-size: 32px;
+}
+
+.hero-text span {
+  color: #7c3aed;
+}
+
+.hero-text button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  background: #7c3aed;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.hero-card {
+  width: 200px;
+  height: 200px;
+  background: url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f");
+  background-size: cover;
+  border-radius: 15px;
+}
+
+/* CATEGORIES */
+.categories span {
+  display: inline-block;
+  background: #1e293b;
+  padding: 8px 12px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+/* BOOKS */
+.books {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.book {
+  background: #1e293b;
+  padding: 10px;
+  border-radius: 10px;
+}
