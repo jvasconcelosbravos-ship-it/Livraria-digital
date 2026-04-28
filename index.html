@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>K11 FLIX</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+  <div class="logo">K11 FLIX</div>
+</header>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1 id="heroTitle"></h1>
+    <button onclick="abrirHero()">▶ Ler agora</button>
+  </div>
+</section>
+
+<!-- LINHA -->
+<h2>🔥 Destaques</h2>
+<div class="row" id="row"></div>
+
+<!-- LEITOR -->
+<div id="reader" class="hidden">
+  <div class="reader-top">
+    <button onclick="fechar()">← Voltar</button>
+  </div>
+  <iframe id="frame"></iframe>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
